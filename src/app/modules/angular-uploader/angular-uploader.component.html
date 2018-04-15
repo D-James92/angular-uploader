@@ -1,0 +1,22 @@
+<div id="uploader-container">
+  <div id="uploader-header">
+    <form [attr.method]="urlMethod" enctype="multipart/form-data" [attr.action]="urlUpload">
+      <div>
+        <label for="file">Choose file to upload</label>
+        <input type="file" name="file" [ngModel]="fileToUpload" (change)="FileToUploadChange($event)" [attr.multiple]="multiple" [attr.size]="maxFileSize" [attr.accept]="typeFile" />
+      </div>
+    </form>
+  </div>
+  <div id="uploader-progressbar">
+    <div id="uploader-progressbar-active"></div>
+  </div>
+  <div id="uploader-content">
+    <div id="upload-content-empty">
+      <img src="./assets/upload.svg" alt="Upload Icon" class="upload-icon" />
+      Upload File with Drag and Drop
+    </div>
+    <div *ngFor="let file of fileList">
+        {{file.name}}
+    </div>
+  </div>
+</div>

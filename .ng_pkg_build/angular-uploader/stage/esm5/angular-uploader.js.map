@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "angular-uploader.js",
+  "sources": [
+    "ng://angular-uploader/out/src/app/modules/header/header.module.ts",
+    "ng://angular-uploader/out/src/app/modules/header/header.component.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { HeaderComponent } from './header.component';\n\n@NgModule({\n  imports: [\n    CommonModule\n  ],\n  declarations: [HeaderComponent],\n  exports: [\n    HeaderComponent\n  ]\n})\nexport class HeaderModule { }\n",
+    "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  template: `<h1>\n  <ng-content></ng-content>\n</h1>`,\n  styles: [`h1{color:green}`]\n})\nexport class HeaderComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n"
+  ],
+  "names": [],
+  "mappings": ";;;ACAA;IAWE;KAAiB;IAEjB,kCAAQ,GAAR;KACC;;;;IAZH,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,YAAY;gBACtB,QAAQ,EAAE,0CAEN;gBACJ,MAAM,EAAE,CAAC,iBAAiB,CAAC;aAC5B,EAAD,EAAA;;;ADRA;IAAA;;;;;IAIA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACR,OAAO,EAAE;oBACP,YAAY;iBACb;gBACD,YAAY,EAAE,CAAC,eAAe,CAAC;gBAC/B,OAAO,EAAE;oBACP,eAAe;iBAChB;aACF,EAAD,EAAA;;;;;"
+}
